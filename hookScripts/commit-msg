@@ -25,7 +25,7 @@ test "" = "$(grep '^Signed-off-by: ' "$1" |
 
 #!/bin/sh
 
-PATTERN='^\[I#ADSO-(\d{1,4})\]';
+PATTERN='^\[I#ADSO-[0-9]*\]';
 FILE=$1;
 
 if grep -q $PATTERN $FILE;
